@@ -1,4 +1,4 @@
-import { useMethods } from '@craftjs/utils';
+import { useMethods } from 'craftjs-utils-with-improvements';
 import React from 'react';
 
 import { LayerMethods } from './actions';

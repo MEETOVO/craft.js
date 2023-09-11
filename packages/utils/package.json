@@ -1,5 +1,5 @@
 {
-  "name": "@craftjs/utils",
+  "name": "craftjs-utils-with-improvements",
   "description": "Utilities used internally across the craft.js monorepo",
   "version": "0.2.0-beta.12",
   "author": "Prev Wong <prevwong@gmail.com>",

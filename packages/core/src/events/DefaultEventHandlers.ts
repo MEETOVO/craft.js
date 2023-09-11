@@ -1,4 +1,4 @@
-import { isChromium, isLinux } from '@craftjs/utils';
+import { isChromium, isLinux } from 'craftjs-utils-with-improvements';
 import { isFunction } from 'lodash';
 import React from 'react';
 
