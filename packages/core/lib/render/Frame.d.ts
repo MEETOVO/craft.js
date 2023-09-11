@@ -1,8 +1,8 @@
 import React from 'react';
 import { SerializedNodes } from '../interfaces';
 export type FrameProps = {
-  json?: string;
-  data?: string | SerializedNodes;
+    json?: string;
+    data?: string | SerializedNodes;
 };
 /**
  * A React Component that defines the editable area

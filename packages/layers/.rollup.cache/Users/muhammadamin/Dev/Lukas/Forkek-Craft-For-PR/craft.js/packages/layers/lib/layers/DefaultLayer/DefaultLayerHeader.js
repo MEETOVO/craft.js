@@ -6,7 +6,7 @@ import Arrow from './svg/arrow.svg';
 import Eye from './svg/eye.svg';
 import Linked from './svg/linked.svg';
 import { useLayer } from '../useLayer';
-const StyledDiv = styled.div`
+const StyledDiv = styled.div `
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -35,7 +35,7 @@ const StyledDiv = styled.div`
     }
   }
 `;
-const Expand = styled.a`
+const Expand = styled.a `
   width: 8px;
   height: 8px;
   display: block;
@@ -45,7 +45,7 @@ const Expand = styled.a`
   cursor: pointer;
   transform-origin: 60% center;
 `;
-const Hide = styled.a`
+const Hide = styled.a `
   width: 14px;
   height: 14px;
   margin-right: 10px;
@@ -73,7 +73,7 @@ const Hide = styled.a`
     opacity: ${(props) => (props.isHidden ? 0.4 : 1)};
   }
 `;
-const TopLevelIndicator = styled.div`
+const TopLevelIndicator = styled.div `
   margin-left: -22px;
   margin-right: 10px;
 
@@ -83,70 +83,30 @@ const TopLevelIndicator = styled.div`
   }
 `;
 export const DefaultLayerHeader = () => {
-  const {
-    id,
-    depth,
-    expanded,
-    children,
-    connectors: { drag, layerHeader },
-    actions: { toggleLayer },
-  } = useLayer((layer) => {
-    return {
-      expanded: layer.expanded,
-    };
-  });
-  const { hidden, actions, selected, topLevel } = useEditor((state, query) => {
-    // TODO: handle multiple selected elements
-    const selected = query.getEvent('selected').first() === id;
-    return {
-      hidden: state.nodes[id] && state.nodes[id].data.hidden,
-      selected,
-      topLevel: query.node(id).isTopLevelCanvas(),
-    };
-  });
-  return React.createElement(
-    StyledDiv,
-    { selected: selected, ref: drag, depth: depth },
-    React.createElement(
-      Hide,
-      {
-        selected: selected,
-        isHidden: hidden,
-        onClick: () => actions.setHidden(id, !hidden),
-      },
-      React.createElement(Eye, null)
-    ),
-    React.createElement(
-      'div',
-      { className: 'inner' },
-      React.createElement(
-        'div',
-        { ref: layerHeader },
-        topLevel
-          ? React.createElement(
-              TopLevelIndicator,
-              null,
-              React.createElement(Linked, null)
-            )
-          : null,
-        React.createElement(
-          'div',
-          { className: 'layer-name s' },
-          React.createElement(EditableLayerName, null)
-        ),
-        React.createElement(
-          'div',
-          null,
-          children && children.length
-            ? React.createElement(
-                Expand,
-                { expanded: expanded, onMouseDown: () => toggleLayer() },
-                React.createElement(Arrow, null)
-              )
-            : null
-        )
-      )
-    )
-  );
+    const { id, depth, expanded, children, connectors: { drag, layerHeader }, actions: { toggleLayer }, } = useLayer((layer) => {
+        return {
+            expanded: layer.expanded,
+        };
+    });
+    const { hidden, actions, selected, topLevel } = useEditor((state, query) => {
+        // TODO: handle multiple selected elements
+        const selected = query.getEvent('selected').first() === id;
+        return {
+            hidden: state.nodes[id] && state.nodes[id].data.hidden,
+            selected,
+            topLevel: query.node(id).isTopLevelCanvas(),
+        };
+    });
+    return (React.createElement(StyledDiv, { selected: selected, ref: drag, depth: depth },
+        React.createElement(Hide, { selected: selected, isHidden: hidden, onClick: () => actions.setHidden(id, !hidden) },
+            React.createElement(Eye, null)),
+        React.createElement("div", { className: "inner" },
+            React.createElement("div", { ref: layerHeader },
+                topLevel ? (React.createElement(TopLevelIndicator, null,
+                    React.createElement(Linked, null))) : null,
+                React.createElement("div", { className: "layer-name s" },
+                    React.createElement(EditableLayerName, null)),
+                React.createElement("div", null, children && children.length ? (React.createElement(Expand, { expanded: expanded, onMouseDown: () => toggleLayer() },
+                    React.createElement(Arrow, null))) : null)))));
 };
 //# sourceMappingURL=DefaultLayerHeader.js.map

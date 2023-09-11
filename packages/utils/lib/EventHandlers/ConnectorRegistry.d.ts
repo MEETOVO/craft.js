@@ -4,23 +4,17 @@ import { ConnectorToRegister, RegisteredConnector } from './interfaces';
  * This allows us to easily enable/disable and perform cleanups
  */
 export declare class ConnectorRegistry {
-  private isEnabled;
-  private elementIdMap;
-  private registry;
-  private getElementId;
-  getConnectorId(element: HTMLElement, connectorName: string): string;
-  register(
-    element: HTMLElement,
-    connectorPayload: ConnectorToRegister
-  ): RegisteredConnector;
-  get(id: string): RegisteredConnector;
-  remove(id: string): void;
-  enable(): void;
-  disable(): void;
-  getByElement(
-    element: HTMLElement,
-    connectorName: string
-  ): RegisteredConnector;
-  removeByElement(element: HTMLElement, connectorName: string): void;
-  clear(): void;
+    private isEnabled;
+    private elementIdMap;
+    private registry;
+    private getElementId;
+    getConnectorId(element: HTMLElement, connectorName: string): string;
+    register(element: HTMLElement, connectorPayload: ConnectorToRegister): RegisteredConnector;
+    get(id: string): RegisteredConnector;
+    remove(id: string): void;
+    enable(): void;
+    disable(): void;
+    getByElement(element: HTMLElement, connectorName: string): RegisteredConnector;
+    removeByElement(element: HTMLElement, connectorName: string): void;
+    clear(): void;
 }

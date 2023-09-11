@@ -35,7 +35,7 @@
     "url": "https://github.com/prevwong/craft.js/issues"
   },
   "dependencies": {
-    "craftjs-utils-with-improvements": "0.2.0-beta.12",
+    "craftjs-utils-with-improvements": "0.2.0-beta.13",
     "debounce": "^1.2.0",
     "lodash": "^4.17.20",
     "tiny-invariant": "^1.0.6"

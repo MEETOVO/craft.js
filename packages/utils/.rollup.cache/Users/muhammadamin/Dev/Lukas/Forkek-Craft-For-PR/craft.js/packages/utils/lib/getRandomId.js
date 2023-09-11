@@ -7,8 +7,8 @@
  * @returns A random id
  */
 export const getRandomId = (size = 10) => {
-  const timestamp = Date.now().toString(36);
-  const randomChars = Math.random().toString(36).substring(2, 5);
-  return `${timestamp}-${randomChars}`;
+    const timestamp = Date.now().toString(36);
+    const randomChars = Math.random().toString(36).substring(2, 5);
+    return `${timestamp}-${randomChars}`;
 };
 //# sourceMappingURL=getRandomId.js.map
