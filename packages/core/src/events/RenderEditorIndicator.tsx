@@ -1,4 +1,4 @@
-import { RenderIndicator, getDOMInfo } from 'craftjs-utils-with-improvements';
+import { RenderIndicator, getDOMInfo } from 'meetovo-craftjs-utils';
 import React, { useEffect } from 'react';
 
 import { useEventHandler } from './EventContext';

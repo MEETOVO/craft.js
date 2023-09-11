@@ -1,5 +1,5 @@
 import { NodeElement } from '@craftjs/core';
-import { Overwrite } from 'craftjs-utils-with-improvements';
+import { Overwrite } from 'meetovo-craftjs-utils';
 import React from 'react';
 import { RenderLeafProps } from 'slate-react';
 

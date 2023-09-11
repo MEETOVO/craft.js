@@ -1,4 +1,4 @@
-import { ERROR_INVALID_NODEID } from 'craftjs-utils-with-improvements';
+import { ERROR_INVALID_NODEID } from 'meetovo-craftjs-utils';
 import invariant from 'tiny-invariant';
 export const getNodesFromSelector = (nodes, selector, config) => {
     const items = Array.isArray(selector) ? selector : [selector];

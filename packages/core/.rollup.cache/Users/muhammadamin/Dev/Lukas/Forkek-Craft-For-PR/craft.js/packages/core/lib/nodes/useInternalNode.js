@@ -1,4 +1,4 @@
-import { wrapConnectorHooks, ERROR_USE_NODE_OUTSIDE_OF_EDITOR_CONTEXT, } from 'craftjs-utils-with-improvements';
+import { wrapConnectorHooks, ERROR_USE_NODE_OUTSIDE_OF_EDITOR_CONTEXT, } from 'meetovo-craftjs-utils';
 import { useMemo, useContext } from 'react';
 import invariant from 'tiny-invariant';
 import { NodeContext } from './NodeContext';

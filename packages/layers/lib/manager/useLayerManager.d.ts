@@ -1,7 +1,7 @@
 import { LayerState } from '../interfaces';
 export declare function useLayerManager<C>(collector?: (state: LayerState) => C): {
     store: import("./context").LayerStore;
-} & import("craftjs-utils-with-improvements").ConditionallyMergeRecordTypes<C, {
+} & import("meetovo-craftjs-utils").ConditionallyMergeRecordTypes<C, {
     actions: {
         setDOM: (id: string, domCollection: Partial<Record<"dom" | "headingDom", HTMLElement>>) => void;
         toggleLayer: (id: string) => void;
@@ -14,7 +14,7 @@ export declare function useLayerManager<C>(collector?: (state: LayerState) => C)
             undo: () => void;
             redo: () => void;
             clear: () => void;
-            throttle: (rate?: number) => import("craftjs-utils-with-improvements").Delete<{
+            throttle: (rate?: number) => import("meetovo-craftjs-utils").Delete<{
                 setDOM: (id: string, domCollection: Partial<Record<"dom" | "headingDom", HTMLElement>>) => void;
                 toggleLayer: (id: string) => void;
                 setExpandedState: (id: string, expanded: boolean) => void;
@@ -22,7 +22,7 @@ export declare function useLayerManager<C>(collector?: (state: LayerState) => C)
                 registerLayer: (id: string) => void;
                 setIndicator: (indicator: any) => void;
             }, never>;
-            merge: () => import("craftjs-utils-with-improvements").Delete<{
+            merge: () => import("meetovo-craftjs-utils").Delete<{
                 setDOM: (id: string, domCollection: Partial<Record<"dom" | "headingDom", HTMLElement>>) => void;
                 toggleLayer: (id: string) => void;
                 setExpandedState: (id: string, expanded: boolean) => void;
@@ -30,7 +30,7 @@ export declare function useLayerManager<C>(collector?: (state: LayerState) => C)
                 registerLayer: (id: string) => void;
                 setIndicator: (indicator: any) => void;
             }, never>;
-            ignore: () => import("craftjs-utils-with-improvements").Delete<{
+            ignore: () => import("meetovo-craftjs-utils").Delete<{
                 setDOM: (id: string, domCollection: Partial<Record<"dom" | "headingDom", HTMLElement>>) => void;
                 toggleLayer: (id: string) => void;
                 setExpandedState: (id: string, expanded: boolean) => void;

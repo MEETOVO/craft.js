@@ -6,5 +6,5 @@ export * from './editor';
 export * from './events';
 export * from './utils/testHelpers';
 export { serializeNode } from './utils/serializeNode';
-export { ROOT_NODE } from 'craftjs-utils-with-improvements';
+export { ROOT_NODE } from 'meetovo-craftjs-utils';
 //# sourceMappingURL=index.js.map

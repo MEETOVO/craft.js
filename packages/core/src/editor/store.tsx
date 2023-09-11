@@ -2,7 +2,7 @@ import {
   useMethods,
   SubscriberAndCallbacksFor,
   PatchListener,
-} from 'craftjs-utils-with-improvements';
+} from 'meetovo-craftjs-utils';
 
 import { ActionMethods } from './actions';
 import { QueryMethods } from './query';

@@ -1,4 +1,4 @@
-import { Overwrite, Delete, OverwriteFnReturnType } from 'craftjs-utils-with-improvements';
+import { Overwrite, Delete, OverwriteFnReturnType } from 'meetovo-craftjs-utils';
 import { EditorCollector, useInternalEditorReturnType } from '../editor/useInternalEditor';
 type PrivateActions = 'addLinkedNodeFromTree' | 'setNodeEvent' | 'setDOM' | 'replaceNodes' | 'reset';
 export type WithoutPrivateActions<S = null> = Delete<useInternalEditorReturnType<S>['actions'], PrivateActions | 'history'> & {

@@ -1,4 +1,4 @@
-import { ERROR_NOT_IN_RESOLVER, getDOMInfo, deprecationWarning, DEPRECATED_ROOT_NODE, ROOT_NODE, } from 'craftjs-utils-with-improvements';
+import { ERROR_NOT_IN_RESOLVER, getDOMInfo, deprecationWarning, DEPRECATED_ROOT_NODE, ROOT_NODE, } from 'meetovo-craftjs-utils';
 import React from 'react';
 import invariant from 'tiny-invariant';
 import { EventHelpers } from './EventHelpers';

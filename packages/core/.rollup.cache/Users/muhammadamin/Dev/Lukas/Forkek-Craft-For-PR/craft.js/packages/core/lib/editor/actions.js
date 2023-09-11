@@ -1,4 +1,4 @@
-import { deprecationWarning, ERROR_INVALID_NODEID, ROOT_NODE, DEPRECATED_ROOT_NODE, ERROR_NOPARENT, ERROR_DELETE_TOP_LEVEL_NODE, ERROR_NOT_IN_RESOLVER, } from 'craftjs-utils-with-improvements';
+import { deprecationWarning, ERROR_INVALID_NODEID, ROOT_NODE, DEPRECATED_ROOT_NODE, ERROR_NOPARENT, ERROR_DELETE_TOP_LEVEL_NODE, ERROR_NOT_IN_RESOLVER, } from 'meetovo-craftjs-utils';
 import invariant from 'tiny-invariant';
 import { fromEntries } from '../utils/fromEntries';
 import { getNodesFromSelector } from '../utils/getNodesFromSelector';

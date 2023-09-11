@@ -1,4 +1,4 @@
-import { SubscriberAndCallbacksFor } from 'craftjs-utils-with-improvements';
+import { SubscriberAndCallbacksFor } from 'meetovo-craftjs-utils';
 import { createContext } from 'react';
 
 import { LayerMethods } from './actions';

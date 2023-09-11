@@ -1,4 +1,4 @@
-import { deprecationWarning } from 'craftjs-utils-with-improvements';
+import { deprecationWarning } from 'meetovo-craftjs-utils';
 
 import { Node } from '../interfaces';
 import { useInternalNode } from '../nodes/useInternalNode';

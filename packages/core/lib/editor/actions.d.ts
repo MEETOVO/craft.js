@@ -1,4 +1,4 @@
-import { QueryCallbacksFor, CallbacksFor, Delete } from 'craftjs-utils-with-improvements';
+import { QueryCallbacksFor, CallbacksFor, Delete } from 'meetovo-craftjs-utils';
 import { QueryMethods } from './query';
 import { EditorState, Indicator, NodeId, Node, Nodes, Options, NodeEventTypes, NodeTree, SerializedNodes, NodeSelector, NodeSelectorType } from '../interfaces';
 declare const Methods: (state: EditorState, query: QueryCallbacksFor<typeof QueryMethods>) => {

@@ -1,4 +1,4 @@
-import { ERROR_NOT_IN_RESOLVER } from 'craftjs-utils-with-improvements';
+import { ERROR_NOT_IN_RESOLVER } from 'meetovo-craftjs-utils';
 import invariant from 'tiny-invariant';
 
 import { Resolver } from '../interfaces';

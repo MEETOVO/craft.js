@@ -1,4 +1,4 @@
-import { useMethods, } from 'craftjs-utils-with-improvements';
+import { useMethods, } from 'meetovo-craftjs-utils';
 import { ActionMethods } from './actions';
 import { QueryMethods } from './query';
 import { DefaultEventHandlers } from '../events';

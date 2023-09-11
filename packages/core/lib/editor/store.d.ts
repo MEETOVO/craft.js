@@ -1,4 +1,4 @@
-import { SubscriberAndCallbacksFor, PatchListener } from 'craftjs-utils-with-improvements';
+import { SubscriberAndCallbacksFor, PatchListener } from 'meetovo-craftjs-utils';
 import { QueryMethods } from './query';
 import { EditorState, Options, NodeEventTypes } from '../interfaces';
 export declare const editorInitialState: EditorState;
@@ -65,7 +65,7 @@ export declare const ActionMethodsWithConfig: {
             canRedo: () => boolean;
         };
     }) => {
-        setState(cb: (state: EditorState, actions: import("craftjs-utils-with-improvements").Delete<{
+        setState(cb: (state: EditorState, actions: import("meetovo-craftjs-utils").Delete<{
             setDOM: (id: string, dom: HTMLElement) => void;
             setNodeEvent: (eventType: NodeEventTypes, nodeIdSelector: string | string[]) => void;
             selectNode: (nodeIdSelector?: string | string[]) => void;
@@ -88,7 +88,7 @@ export declare const ActionMethodsWithConfig: {
                 undo: () => void;
                 redo: () => void;
                 clear: () => void;
-                throttle: (rate?: number) => import("craftjs-utils-with-improvements").Delete<{
+                throttle: (rate?: number) => import("meetovo-craftjs-utils").Delete<{
                     setDOM: (id: string, dom: HTMLElement) => void;
                     setNodeEvent: (eventType: NodeEventTypes, nodeIdSelector: string | string[]) => void;
                     selectNode: (nodeIdSelector?: string | string[]) => void;
@@ -107,7 +107,7 @@ export declare const ActionMethodsWithConfig: {
                     setHidden: (id: string, bool: boolean) => void;
                     setProp: (selector: string | string[], cb: (props: any) => void) => void;
                 }, never>;
-                merge: () => import("craftjs-utils-with-improvements").Delete<{
+                merge: () => import("meetovo-craftjs-utils").Delete<{
                     setDOM: (id: string, dom: HTMLElement) => void;
                     setNodeEvent: (eventType: NodeEventTypes, nodeIdSelector: string | string[]) => void;
                     selectNode: (nodeIdSelector?: string | string[]) => void;
@@ -126,7 +126,7 @@ export declare const ActionMethodsWithConfig: {
                     setHidden: (id: string, bool: boolean) => void;
                     setProp: (selector: string | string[], cb: (props: any) => void) => void;
                 }, never>;
-                ignore: () => import("craftjs-utils-with-improvements").Delete<{
+                ignore: () => import("meetovo-craftjs-utils").Delete<{
                     setDOM: (id: string, dom: HTMLElement) => void;
                     setNodeEvent: (eventType: NodeEventTypes, nodeIdSelector: string | string[]) => void;
                     selectNode: (nodeIdSelector?: string | string[]) => void;

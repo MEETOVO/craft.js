@@ -1,4 +1,4 @@
-import { ERROR_INVALID_NODEID } from 'craftjs-utils-with-improvements';
+import { ERROR_INVALID_NODEID } from 'meetovo-craftjs-utils';
 import invariant from 'tiny-invariant';
 
 import { Nodes, Node, NodeSelectorWrapper, NodeSelector } from '../interfaces';

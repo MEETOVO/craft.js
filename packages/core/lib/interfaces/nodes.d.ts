@@ -1,4 +1,4 @@
-import { QueryCallbacksFor } from 'craftjs-utils-with-improvements';
+import { QueryCallbacksFor } from 'meetovo-craftjs-utils';
 import React from 'react';
 import { QueryMethods } from '../editor/query';
 export type UserComponentConfig<T> = {

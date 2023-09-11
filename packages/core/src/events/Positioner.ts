@@ -1,4 +1,4 @@
-import { getDOMInfo, ROOT_NODE } from 'craftjs-utils-with-improvements';
+import { getDOMInfo, ROOT_NODE } from 'meetovo-craftjs-utils';
 
 import findPosition from './findPosition';
 

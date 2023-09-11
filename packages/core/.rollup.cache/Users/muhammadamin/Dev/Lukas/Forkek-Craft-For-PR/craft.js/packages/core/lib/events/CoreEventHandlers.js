@@ -1,4 +1,4 @@
-import { DerivedEventHandlers, EventHandlers, } from 'craftjs-utils-with-improvements';
+import { DerivedEventHandlers, EventHandlers, } from 'meetovo-craftjs-utils';
 export class CoreEventHandlers extends EventHandlers {
     handlers() {
         return {

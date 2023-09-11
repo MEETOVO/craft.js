@@ -2252,9 +2252,9 @@ __metadata:
   resolution: "@craftjs/core@workspace:packages/core"
   dependencies:
     "@types/react": 18.0.27
-    craftjs-utils-with-improvements: 0.2.0-beta.13
     debounce: ^1.2.0
     lodash: ^4.17.20
+    meetovo-craftjs-utils: 0.2.0-beta.13
     react: 18.2.0
     tiny-invariant: ^1.0.6
   peerDependencies:
@@ -2268,7 +2268,7 @@ __metadata:
   dependencies:
     "@babel/core": 7.7.4
     "@svgr/rollup": 6.5.1
-    craftjs-utils-with-improvements: ^0.2.0-beta.12
+    meetovo-craftjs-utils: ^0.2.0-beta.12
     react-contenteditable: ^3.3.3
     styled-components: 4.2.1
   peerDependencies:
@@ -8694,21 +8694,6 @@ clsx@latest:
   checksum: c53bf7befc1591b2651a22414a5e786cd5f2eeaa87f3678a3d49d6069835a9d8d1aef223728e98aa8fec9a95bf831120d245096db12abe019fecb51f5696c96f
   languageName: node
   linkType: hard
-
-"craftjs-utils-with-improvements@0.2.0-beta.13, craftjs-utils-with-improvements@^0.2.0-beta.12, craftjs-utils-with-improvements@workspace:packages/utils":
-  version: 0.0.0-use.local
-  resolution: "craftjs-utils-with-improvements@workspace:packages/utils"
-  dependencies:
-    "@types/react": 18.0.27
-    immer: ^9.0.6
-    lodash: ^4.17.20
-    nanoid: ^3.1.23
-    shallowequal: ^1.1.0
-    tiny-invariant: ^1.0.6
-  peerDependencies:
-    react: ^16.8.0 || ^17 || ^18
-  languageName: unknown
-  linkType: soft
 
 "cross-env@npm:6.0.3":
   version: 6.0.3
@@ -15467,6 +15452,21 @@ clsx@latest:
   checksum: af1b38516c28ec95d6b0826f6c8f276c58aec391f76be42aa07646b4e39d317723e869700933ca6995b056db4b09a78c92d5440dc23657e6764be5d28874bba1
   languageName: node
   linkType: hard
+
+"meetovo-craftjs-utils@0.2.0-beta.13, meetovo-craftjs-utils@^0.2.0-beta.12, meetovo-craftjs-utils@workspace:packages/utils":
+  version: 0.0.0-use.local
+  resolution: "meetovo-craftjs-utils@workspace:packages/utils"
+  dependencies:
+    "@types/react": 18.0.27
+    immer: ^9.0.6
+    lodash: ^4.17.20
+    nanoid: ^3.1.23
+    shallowequal: ^1.1.0
+    tiny-invariant: ^1.0.6
+  peerDependencies:
+    react: ^16.8.0 || ^17 || ^18
+  languageName: unknown
+  linkType: soft
 
 "memfs@npm:^3.1.2, memfs@npm:^3.4.3":
   version: 3.4.13

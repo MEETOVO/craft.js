@@ -1,5 +1,5 @@
 import { useNode, useEditor } from '@craftjs/core';
-import { ROOT_NODE } from 'craftjs-utils-with-improvements';
+import { ROOT_NODE } from 'meetovo-craftjs-utils';
 import React, { useEffect, useRef, useCallback } from 'react';
 import ReactDOM from 'react-dom';
 import styled from 'styled-components';

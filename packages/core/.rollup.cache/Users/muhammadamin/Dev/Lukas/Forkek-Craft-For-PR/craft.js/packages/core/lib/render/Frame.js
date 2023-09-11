@@ -1,4 +1,4 @@
-import { deprecationWarning, ROOT_NODE } from 'craftjs-utils-with-improvements';
+import { deprecationWarning, ROOT_NODE } from 'meetovo-craftjs-utils';
 import React, { useEffect, useRef } from 'react';
 import { useInternalEditor } from '../editor/useInternalEditor';
 import { NodeElement } from '../nodes/NodeElement';

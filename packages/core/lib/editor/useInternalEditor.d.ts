@@ -1,5 +1,5 @@
 /// <reference types="react" />
-import { useCollectorReturnType, QueryCallbacksFor, EventHandlerConnectors } from 'craftjs-utils-with-improvements';
+import { useCollectorReturnType, QueryCallbacksFor, EventHandlerConnectors } from 'meetovo-craftjs-utils';
 import { QueryMethods } from './query';
 import { EditorStore } from './store';
 import { CoreEventHandlers } from '../events/CoreEventHandlers';

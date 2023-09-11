@@ -1,4 +1,4 @@
-import { useCollector } from 'craftjs-utils-with-improvements';
+import { useCollector } from 'meetovo-craftjs-utils';
 import { useContext, useMemo } from 'react';
 
 import { LayerManagerContext } from './context';

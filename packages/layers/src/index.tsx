@@ -1,4 +1,4 @@
-import { ROOT_NODE } from 'craftjs-utils-with-improvements';
+import { ROOT_NODE } from 'meetovo-craftjs-utils';
 import React from 'react';
 
 import { LayerOptions } from './interfaces';

@@ -1,5 +1,5 @@
 /// <reference types="react" />
-import { QueryCallbacksFor, Delete, PatchListenerAction } from 'craftjs-utils-with-improvements';
+import { QueryCallbacksFor, Delete, PatchListenerAction } from 'meetovo-craftjs-utils';
 import { Placement } from './events';
 import { Nodes, NodeEventTypes, NodeId, Node } from './nodes';
 import { QueryMethods } from '../editor/query';

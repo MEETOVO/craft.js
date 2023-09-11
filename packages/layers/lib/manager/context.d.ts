@@ -1,5 +1,5 @@
 /// <reference types="react" />
-import { SubscriberAndCallbacksFor } from 'craftjs-utils-with-improvements';
+import { SubscriberAndCallbacksFor } from 'meetovo-craftjs-utils';
 import { LayerMethods } from './actions';
 export type LayerStore = SubscriberAndCallbacksFor<typeof LayerMethods>;
 export type LayerManagerContextType = {

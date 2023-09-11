@@ -7,14 +7,14 @@ export declare function useLayer<S = null>(collect?: (layer: Layer) => S): {
         toggleLayer: () => void;
         setExpandedState: (expanded: boolean) => void;
     };
-    connectors: import("craftjs-utils-with-improvements").ChainableConnectors<{
+    connectors: import("meetovo-craftjs-utils").ChainableConnectors<{
         layer: (el: HTMLElement) => HTMLElement;
         drag: (el: HTMLElement) => HTMLElement;
         layerHeader: (el: HTMLElement) => HTMLElement;
     }, HTMLElement | import("react").ReactElement<any, string | import("react").JSXElementConstructor<any>>>;
 } & Omit<{
     store: import("../manager").LayerStore;
-} & import("craftjs-utils-with-improvements").ConditionallyMergeRecordTypes<S, {
+} & import("meetovo-craftjs-utils").ConditionallyMergeRecordTypes<S, {
     actions: {
         setDOM: (id: string, domCollection: Partial<Record<"dom" | "headingDom", HTMLElement>>) => void;
         toggleLayer: (id: string) => void;
@@ -27,7 +27,7 @@ export declare function useLayer<S = null>(collect?: (layer: Layer) => S): {
             undo: () => void;
             redo: () => void;
             clear: () => void;
-            throttle: (rate?: number) => import("craftjs-utils-with-improvements").Delete<{
+            throttle: (rate?: number) => import("meetovo-craftjs-utils").Delete<{
                 setDOM: (id: string, domCollection: Partial<Record<"dom" | "headingDom", HTMLElement>>) => void;
                 toggleLayer: (id: string) => void;
                 setExpandedState: (id: string, expanded: boolean) => void;
@@ -35,7 +35,7 @@ export declare function useLayer<S = null>(collect?: (layer: Layer) => S): {
                 registerLayer: (id: string) => void;
                 setIndicator: (indicator: any) => void;
             }, never>;
-            merge: () => import("craftjs-utils-with-improvements").Delete<{
+            merge: () => import("meetovo-craftjs-utils").Delete<{
                 setDOM: (id: string, domCollection: Partial<Record<"dom" | "headingDom", HTMLElement>>) => void;
                 toggleLayer: (id: string) => void;
                 setExpandedState: (id: string, expanded: boolean) => void;
@@ -43,7 +43,7 @@ export declare function useLayer<S = null>(collect?: (layer: Layer) => S): {
                 registerLayer: (id: string) => void;
                 setIndicator: (indicator: any) => void;
             }, never>;
-            ignore: () => import("craftjs-utils-with-improvements").Delete<{
+            ignore: () => import("meetovo-craftjs-utils").Delete<{
                 setDOM: (id: string, domCollection: Partial<Record<"dom" | "headingDom", HTMLElement>>) => void;
                 toggleLayer: (id: string) => void;
                 setExpandedState: (id: string, expanded: boolean) => void;

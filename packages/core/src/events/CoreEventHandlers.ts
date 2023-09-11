@@ -1,7 +1,7 @@
 import {
   DerivedEventHandlers,
   EventHandlers,
-} from 'craftjs-utils-with-improvements';
+} from 'meetovo-craftjs-utils';
 
 import { EditorStore } from '../editor/store';
 import { NodeId, NodeTree } from '../interfaces/nodes';

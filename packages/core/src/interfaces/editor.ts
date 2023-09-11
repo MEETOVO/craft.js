@@ -2,7 +2,7 @@ import {
   QueryCallbacksFor,
   Delete,
   PatchListenerAction,
-} from 'craftjs-utils-with-improvements';
+} from 'meetovo-craftjs-utils';
 
 import { Placement } from './events';
 import { Nodes, NodeEventTypes, NodeId, Node } from './nodes';

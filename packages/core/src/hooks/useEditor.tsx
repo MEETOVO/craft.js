@@ -2,7 +2,7 @@ import {
   Overwrite,
   Delete,
   OverwriteFnReturnType,
-} from 'craftjs-utils-with-improvements';
+} from 'meetovo-craftjs-utils';
 import { useMemo } from 'react';
 
 import {
