@@ -2251,10 +2251,10 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@craftjs/core@workspace:packages/core"
   dependencies:
-    "@craftjs/utils": ^0.2.0-beta.12
     "@types/react": 18.0.27
     debounce: ^1.2.0
     lodash: ^4.17.20
+    meetovo-craftjs-utils: 0.2.0-beta.13
     react: 18.2.0
     tiny-invariant: ^1.0.6
   peerDependencies:
@@ -2267,29 +2267,14 @@ __metadata:
   resolution: "@craftjs/layers@workspace:packages/layers"
   dependencies:
     "@babel/core": 7.7.4
-    "@craftjs/utils": ^0.2.0-beta.12
     "@svgr/rollup": 6.5.1
+    meetovo-craftjs-utils: ^0.2.0-beta.12
     react-contenteditable: ^3.3.3
     styled-components: 4.2.1
   peerDependencies:
     "@craftjs/core": ^0.2.0-alpha.19
     react: ^16.8.0 || ^17 || ^18
     styled-components: ">= 4"
-  languageName: unknown
-  linkType: soft
-
-"@craftjs/utils@^0.2.0-beta.12, @craftjs/utils@workspace:packages/utils":
-  version: 0.0.0-use.local
-  resolution: "@craftjs/utils@workspace:packages/utils"
-  dependencies:
-    "@types/react": 18.0.27
-    immer: ^9.0.6
-    lodash: ^4.17.20
-    nanoid: ^3.1.23
-    shallowequal: ^1.1.0
-    tiny-invariant: ^1.0.6
-  peerDependencies:
-    react: ^16.8.0 || ^17 || ^18
   languageName: unknown
   linkType: soft
 
@@ -15467,6 +15452,21 @@ clsx@latest:
   checksum: af1b38516c28ec95d6b0826f6c8f276c58aec391f76be42aa07646b4e39d317723e869700933ca6995b056db4b09a78c92d5440dc23657e6764be5d28874bba1
   languageName: node
   linkType: hard
+
+"meetovo-craftjs-utils@0.2.0-beta.13, meetovo-craftjs-utils@^0.2.0-beta.12, meetovo-craftjs-utils@workspace:packages/utils":
+  version: 0.0.0-use.local
+  resolution: "meetovo-craftjs-utils@workspace:packages/utils"
+  dependencies:
+    "@types/react": 18.0.27
+    immer: ^9.0.6
+    lodash: ^4.17.20
+    nanoid: ^3.1.23
+    shallowequal: ^1.1.0
+    tiny-invariant: ^1.0.6
+  peerDependencies:
+    react: ^16.8.0 || ^17 || ^18
+  languageName: unknown
+  linkType: soft
 
 "memfs@npm:^3.1.2, memfs@npm:^3.4.3":
   version: 3.4.13

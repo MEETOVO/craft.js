@@ -1,4 +1,7 @@
-import { DerivedEventHandlers, EventHandlers } from '@craftjs/utils';
+import {
+  DerivedEventHandlers,
+  EventHandlers,
+} from 'meetovo-craftjs-utils';
 
 import { EditorStore } from '../editor/store';
 import { NodeId, NodeTree } from '../interfaces/nodes';

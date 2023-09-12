@@ -1,4 +1,4 @@
-import { useMethods } from '@craftjs/utils';
+import { useMethods } from 'meetovo-craftjs-utils';
 import React from 'react';
 
 import { LayerMethods } from './actions';

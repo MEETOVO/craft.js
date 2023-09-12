@@ -1,4 +1,4 @@
-import { isChromium, isLinux } from '@craftjs/utils';
+import { isChromium, isLinux } from 'meetovo-craftjs-utils';
 import { isFunction } from 'lodash';
 import React from 'react';
 

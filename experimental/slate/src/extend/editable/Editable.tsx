@@ -1,4 +1,4 @@
-import { Delete } from '@craftjs/utils';
+import { Delete } from 'meetovo-craftjs-utils';
 import React, { useCallback } from 'react';
 import { Editable as SlateEditable } from 'slate-react';
 
